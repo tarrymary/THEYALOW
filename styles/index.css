@@ -17,7 +17,7 @@
 	box-sizing: border-box;
 }
 
-.logo {
+.logo-img {
 	float:left;
 	height: 83px;
 	width: 83px;
@@ -64,6 +64,7 @@
 }
 
 .header-menu__item {
+	position: relative;
 	display: block;
 	float: left;
 	padding-left:49px;	
@@ -77,8 +78,8 @@
 	background-repeat: no-repeat;
 	background-size: 30px;
 	position: absolute;
-	left: 840px;
-	top: 70px;
+	left: 15px;
+	top: 5px;
 }
 
 .h-m__i--s__img {
@@ -88,8 +89,8 @@
 	background-repeat: no-repeat;
 	background-size: 30px;
 	position: absolute;
-	left: 990px;
-	top: 70px;
+	left: 15px;
+	top: 5px;
 }
 
 .h-m__i--c__img {
@@ -99,8 +100,8 @@
 	background-repeat: no-repeat;
 	background-size: 30px;
 	position: absolute;
-	left: 1145px;
-	top: 73px;
+	top:10px;
+	left:15px;
 }
 
 .h-m__i--services {
@@ -125,7 +126,33 @@
 
 .header-playerblock {
 	height: 338px;
-	border: 1px solid #fff;
+	padding-bottom: 68px;
+	padding-top: 53px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.
+.header-pl__player {
+	background-image: url(../images/player.png);
+	background-repeat: no-repeat;
+	width: 549px;
+	height: 330px;
+}
+
+.header-pl__text {
+	padding-top: 100px;
+	text-align: center;
+}
+
+.header-pl__words {
+	color: #f5c506;
+	text-transform: uppercase;
+	font-size:30pt;
+	font-family: sans-serif;
+	line-height: 50px;
+}
+
+.header-pl__words--white {
+	color:#fff;
+}
