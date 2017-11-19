@@ -9,8 +9,13 @@
 	margin: auto;
 }
 
-.header {
+.header-bg {
 	background-image: url(../images/bg-header.png);
+	background-size: cover;
+}
+
+.header {
+	
 	padding-top: 24px;
 	padding-left: 140px;
 	padding-right: 140px;
