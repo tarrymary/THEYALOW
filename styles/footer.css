@@ -94,7 +94,7 @@
 	content: "";
 	width: 5px;
 	height: 5px;
-	border-radius: 100px;
+	border-radius: 50%;
 	background-color: #f5c506; 
 	padding-right: 10px;
 }
