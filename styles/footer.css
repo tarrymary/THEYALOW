@@ -108,10 +108,6 @@
 .section--grey {
 	background-color: #4c4c4c;
 	box-shadow: 0 -3px 15px  #222;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .copyright {
@@ -147,6 +143,10 @@
 }
 
 .copyright-text {
+	width: 200px;
+}
+
+.c-t__text {
 	color: #fff;
 	font-family: sans-serif;
 	font-size: 11pt;
