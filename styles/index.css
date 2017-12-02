@@ -143,6 +143,7 @@
 		box-shadow: none;
 		flex-grow: 1;
 		height: 57px;
+		text-align: center;
 	}
 }
 
@@ -150,86 +151,63 @@
 	position: relative;
 	display: block;
 	float: left;
-	padding-left:49px;	
-	line-height: 40px;
+	flex-grow: 1;
+	text-align: center;
 }
 
 @media (max-width: 1020px) {
 	.header-menu__item {
-		padding-left: 40px;
 		line-height: 57px;
 	}
 }
 
-.h-m__i--ab__img {
-	width: 30px;
-	height: 30px;
-	background-image: url(../images/about.png);
-	background-repeat: no-repeat;
-	background-size: 30px;
-	position: absolute;
-	left: 15px;
-	top: 5px;
-}
-
-@media (max-width: 1020px) {
-	.h-m__i--ab__img {
-		top: 10px;
-	}
-}
-
-.h-m__i--s__img {
-	width: 30px;
-	height: 30px;
-	background-image: url(../images/setting.png);
-	background-repeat: no-repeat;
-	background-size: 30px;
-	position: absolute;
-	left: 15px;
-	top: 5px;
-}
-
-@media (max-width: 1020px) {
-	.h-m__i--s__img {
-		top: 10px;
-	}
-}
-
-.h-m__i--c__img {
-	width: 30px;
-	height: 30px;
-	background-image: url(../images/mail.png);
-	background-repeat: no-repeat;
-	background-size: 30px;
-	position: absolute;
-	left: 15px;
-	top: 7px;
-}
-
-@media (max-width: 1020px) {
-	.h-m__i--c__img {
-		top: 14px;
-	}
-}
-
-.h-m__i--services {
+.header-menu__item--services {
 	border-left: 1px solid #b99403;
 	border-right: 1px solid #b99403;
 }
 
-
 .header-menu__link {
+	display: inline-block;
+	position: relative;
 	text-decoration: none;
 	color:#b99403;
-	padding: 10px 10px;
+	padding-left: 35px;
 	text-transform: uppercase;
 	font-size: 12pt;
 	font-family: Helvetica;
+	line-height: 40px;
+	height: 40px;
 }
 
 .header-menu__link:hover {
 	color: #4b483a;
 }
+
+.header-menu__link:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-left:-35px;
+	background-position: 50% 50%;
+}
+
+.header-menu__link--contact:before {
+	background-image: url(../images/mail.png);
+}
+
+.header-menu__link--about:before {
+	background-image: url(../images/about.png);
+}
+
+.header-menu__link--services:before {
+	background-image: url(../images/setting.png);
+}
+
+
 
 .header-playerblock {
 	padding-bottom: 68px;
@@ -243,15 +221,19 @@
 @media (max-width: 1020px) {
 	.header-playerblock {
 		padding: 0;
-		width: 100%;
-		height: 330px;
 	}
 }
 
 @media (max-width: 1020px) {
 	.header-pl__player {
 		width: 100%;
-		height: 330px;
+	}
+}
+
+@media (max-width: 1020px) {
+	.header-player__img {
+		width: 100%;
+		display: block;
 	}
 }
 
